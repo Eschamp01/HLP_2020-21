@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Tests", "Tests.fsproj", "{23885879-1995-4DBD-82A9-1C71AE43BDF0}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HLP tick 1", "HLP tick 1.fsproj", "{23885879-1995-4DBD-82A9-1C71AE43BDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
