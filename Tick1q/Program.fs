@@ -8,17 +8,16 @@ let polarToCartesianApprox (r,theta) n =
     
     let fact n = if n = 0 then 1.0 else List.reduce(*) [1.0 .. float n]
 
-    let cartesianTuple =
-        let cosList = [0..2..n]
-        let sinList = if n=0 then [0] else [1..2..n]
-        let term index i = 
-            (-1.0)**(float index) * (theta ** (float i)) / (float (fact i))
-        let cosTheta = cosList |> List.mapi term |> List.reduce (+)
-        let sinTheta = if n=0 then 0.0 else (sinList |> List.mapi term |> List.reduce (+))
+    let cosList = [0..2..n]
+    let sinList = if n=0 then [0] else [1..2..n]
+    let term index i = 
+        (-1.0)**(float index) * (theta ** (float i)) / (float (fact i))
+    let cosTheta = cosList |> List.mapi term |> List.reduce (+)
+    let sinTheta = if n=0 then 0.0 else (sinList |> List.mapi term |> List.reduce (+))
 
-        (r*cosTheta,r*sinTheta)
+    (r*cosTheta,r*sinTheta)
 
-    cartesianTuple
+polarToCartesianApprox (2.0,2.0) 0
 
 //polarToCartesianApprox (2.0,2.0) 10 //used to test the function works
 
