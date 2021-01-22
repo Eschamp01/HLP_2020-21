@@ -17,8 +17,6 @@ let polarToCartesianApprox (r,theta) n =
 
     (r*cosTheta,r*sinTheta)
 
-polarToCartesianApprox (2.0,2.0) 0
-
 //polarToCartesianApprox (2.0,2.0) 10 //used to test the function works
 
 //--------------------testbench code - DO NOT CHANGE-----------------------------//
