@@ -89,7 +89,13 @@ let main argv =
         |> Option.orElse (List.tryFind((<) 0) lst)
         |> Option.defaultValue 0
     
-    
+    let divideBy denom numer =
+        if denom <> 0.0
+        then Ok <| numer / denom
+        else Error <| sprintf "attempted to divide %f by zero" numer
+        
+
+    divideBy 3.0 4.0
 
     let ceiling (f:float) = Math.Ceiling f
 
@@ -286,4 +292,10 @@ List.fold
         lst.[0..index-1] @ [el] @ [index..lst.Length-1]
     
     insertElement 3 0 list1
+
+    //how map.ContainsKey works
+    let map1 = Map.ofList ["3",3;"4",4]
+    let map2 = Map.ofList map1
+    map1.ContainsKey "3"
+
     0 // return an integer exit code
