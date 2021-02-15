@@ -1,4 +1,2 @@
-# HLP Spring 2021 Tick Skeleton and Example code
-
-
-
+# Repository for work on the HLP module in EE3, Imperial College London
+### [HLP course website](https://intranet.ee.ic.ac.uk/t.clarke/hlp/) (requires Imperial College login details)
